@@ -34,9 +34,9 @@ if isempty(locs)~=1 %does not enter the loop unless peaks had been identified
     end
 end
 if isempty(Leve)==1 %gave back a false event in case nothing is detected to avoid crashes
-    Leve=1;
+    Leve=round(size(I,2)/2);
 end
 if isempty(Reve)==1
-    Reve=1;
+    Reve=round(size(I,2)/2);
 end 
 end
